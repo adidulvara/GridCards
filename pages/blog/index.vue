@@ -1,16 +1,13 @@
 <template>
     <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
-         <div>
-            Home
-         </div>
-        
+     Blog
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
