@@ -28,7 +28,6 @@
         <div class="mt-4">
             <button class="rounded-lg font-space bg-black text-white px-8 py-3 flex flex-row gap-0.5 ">
                  <p>Continua</p>
-                 <component :is="icons.arrow" class="h-5 mt-0.5 ml-0.5"></component>
             </button>
         </div>
         </div>
@@ -37,7 +36,6 @@
 </template>
 
 <script setup lang="ts">
-import { HomeIcon, FilmIcon, PlusIcon, TrashIcon, ArrowLongRightIcon } from "@heroicons/vue/24/outline"
 
 defineProps({
     title: String ,
@@ -46,13 +44,7 @@ defineProps({
     isHighlighted:Boolean,
 })
 
-const icons = reactive({
-  home: HomeIcon,
-  film: FilmIcon,
-  plus: PlusIcon,
-  trash: TrashIcon,
-  arrow: ArrowLongRightIcon,
-})
+
 </script>
 
 <style scoped>

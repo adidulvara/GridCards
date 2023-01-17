@@ -16,7 +16,7 @@ interface Product {
     title: string;
     price: number; 
     bags: number;
-    isHighlighted: Boolean;
+    isHighlighted: boolean;
 }
 
 const products: Product[]=[
