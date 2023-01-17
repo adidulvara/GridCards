@@ -1,6 +1,7 @@
 <template>
-    <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-lg h-screen">
-        <div class="text-3xl text-left font-space font-bold py-4 px-2 my-16 ">
+    <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
+        <Navbar/>
+        <div class="text-5xl text-left font-space font-bold py-4 px-2 my-16 ">
            Pachete Reciclon
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-around gap-4  lg:gap-x-12">
