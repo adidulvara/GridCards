@@ -1,10 +1,12 @@
 <template>
     <div class="flex mx-auto p-4 items-center w-full  max-w-screen-xl justify-between"> 
+        <NuxtLink to="/">
        <IconsLogo/>
-       <div class=" hidden sm:flex flex-row gap-4 font-space font-semibold text-lg items-center justify-between ">
-        <NuxtLink to="/blog">Blog</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink class="text-white bg-black rounded-[7px] px-4 py-1" to="/pricing">Log in</NuxtLink>
+        </NuxtLink>
+        <div class=" hidden sm:flex flex-row gap-4 font-space font-regular text-lg items-center justify-between ">
+        <NuxtLink class="font-semibold"  to="/blog">Blog</NuxtLink>
+        <NuxtLink  class="font-semibold" to="/pricing">Pricing</NuxtLink>
+        <NuxtLink class=" text-white bg-black rounded-[7px] px-4 py-1" to="/pricing">Log in</NuxtLink>
        </div>
        <button class="flex sm:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">

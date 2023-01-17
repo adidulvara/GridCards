@@ -1,5 +1,8 @@
 <template>
-    <div class="p-12 font-dm bg-gradient-to-r from-blue-500 to-{#f1f1f1} w-full h-full min-h-screen flex flex-col items-center">
+   <div>
+    <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
+    <Navbar/>
         <slot/>
     </div>
+   </div>
 </template>
