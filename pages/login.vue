@@ -1,5 +1,7 @@
 <template>
-    <div class="font-dm items-center gap-2 flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
+    <div class="font-dm
+    
+    items-center gap-2 flex flex-col px-10 md:px-24 lg:px-auto max-w-screen-xl h-screen">
          
          <FormsLogin class="mt-24"/>
     </div>
