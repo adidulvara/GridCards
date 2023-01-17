@@ -8,6 +8,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@vueuse/nuxt',
+    '@vueuse/nuxt','@nuxt/content',
   ],
 })

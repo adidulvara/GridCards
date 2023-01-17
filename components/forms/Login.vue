@@ -12,15 +12,15 @@
                 <input class="rounded-[8px]  w-full px-8 py-3.5
                  bg-[#ebebeb] font-space placeholder-zinc-600 focus:outline-none " type="text" placeholder="+407...">
             </div>
-            <div class="text-white mt-2 bg-black rounded-[8px] 
+            <button @click="" class="w-80 text-white mt-2 bg-black rounded-[8px] 
             text-center font-dm text-lg items-center justify-center flex flex-row gap-1
             font-normal px-4 py-3.5">
-                <button class="">
+                <div class="">
                 Continua
-            </button>
-            <component class="h-6 animate-pulse" :is="icons.arrowRight"></component>
-
             </div>
+            <component class="h-6 hidden" :is="icons.arrowRight"></component>
+
+            </button>
             <div class="bg-[#D9D9D9] h-[2px] mx-1 mt-4 mb-2 rounded-full"></div>
         </div>
         <div class="flex flex-col gap-[8px]">
