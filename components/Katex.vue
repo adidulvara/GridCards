@@ -1,5 +1,5 @@
 <template>
-    <div v-html="katexOutput">
+    <div class="" v-html="katexOutput">
 
     </div>
 </template>
