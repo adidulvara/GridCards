@@ -34,7 +34,11 @@
          <ButtonsSocialTwitter/>
          </button>
         </div>
+        <div class="text-[10px] text-left text-zinc-500 w-80">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
          </div>
+         </div>
+        
     </div>
 </template>
 
