@@ -3,14 +3,14 @@
          <div>
             Home
          </div>
+         <Katex :element="equation"/>
         
     </div>
 </template>
 
 <script setup lang="ts">
-
+const equation = ' \\left|\\begin{array}{ccc} 1& 2&3  \\\\2  &  x+1 & 2x+1 \\\\  3&2x+1   &3x+1 \\end{array}\\right|=-1'
 </script>
-
 <style scoped>
 
 </style>

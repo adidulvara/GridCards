@@ -10,4 +10,22 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt','@nuxt/content',
   ],
+  app: {
+    head: {
+      link: [{
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css'
+      }],
+    }
+  },
+  content: {
+    markdown: {
+      remarkPlugins: [
+        'remark-math'
+      ],
+      rehypePlugins: [
+        'rehype-katex'
+      ]
+    }
+  }
 })
