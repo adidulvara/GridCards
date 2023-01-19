@@ -6,18 +6,18 @@
 
 <script setup lang="ts">
 import katex from 'katex'
-const props=defineProps({
-    element:{
+const props = defineProps({
+    element: {
         type: String,
         required: true,
     }
 })
-const text=` \\begin{bmatrix} a & b \\\\ 
+const text = ` \\begin{bmatrix} a & b \\\\ 
     c & d \\end{bmatrix}`;
-const katexOutput = computed(()=>{
-    return katex.renderToString(props.element,{
+const katexOutput = computed(() => {
+    return katex.renderToString(props.element, {
         throwOnError: false,
-        displayMode: true, 
+        displayMode: true,
     })
 })
 </script>
