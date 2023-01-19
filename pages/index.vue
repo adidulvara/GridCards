@@ -1,11 +1,11 @@
 <template>
     <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
-         <div>
-            Home
+         <div class="text-5xl font-space text-center mx-auto my-4 font-bold">
+            HomePage
          </div>
        <div class="flex gap-2 items-center font-space font-medium text-lg">
-        <Katex :element="'1/4'"/> times
-
+        <Katex :element="fraction"/> times
+         <Icon name="👨🏼‍🚀" class="text-red-400 "/>
        </div>        
     </div>
 </template>
