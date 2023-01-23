@@ -1,5 +1,5 @@
 <template>
-   <div class="w-full items-center  p-16 mt-4 md:mt-12 flex flex-col bg-[#ffffff] text-black font-space font-regular">
+   <div class="w-full items-center  p-16 mt-4 md:mt-12 flex flex-col  font-space font-regular">
       <div class="max-w-screen-lg w-4/5">
          <div id="Logo" class="mb-12">
             <IconsLogo />
@@ -29,12 +29,12 @@
                <div>Ajutor</div>
             </div>
          </div>
-         <div class="w-full h-[3px] my-6 rounded-full bg-[#565656]"></div>
+         <div class="w-full h-[3px] my-6 rounded-full bg-[#f8f8f8]"></div>
          <div class="flex flex-col gap-2 md:flex-row md:justify-between mx-1 md:items-center">
-            <div class="text-xs text-[#3e3e3e]">
+            <div class="text-xs text-[#f8f8f8]">
                © 2023 Reciclon Inc. Toate drepturile rezervate.
             </div>
-            <div class="flex flex-row gap-4 items-center">
+            <div class="flex flex-row gap-4 items-center text-[#f8f8f8]">
                <IconsTwitter />
                <IconsInstagram />
                <IconsLinkedin />
