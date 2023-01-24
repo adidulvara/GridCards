@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       }],
     }
   },
-  content: {
+   content: {
     markdown: {
       remarkPlugins: [
         'remark-math'
@@ -29,4 +29,5 @@ export default defineNuxtConfig({
       ]
     }
   }
+ 
 })
