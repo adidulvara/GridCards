@@ -3,8 +3,8 @@
         <div class="flex flex-col gap-[8px] bg-white shadow-xl rounded-[8px]
         px-24 py-16 items-center">
             <IconsLogo class="mb-8" />
-            <div class="font-dm font-medium text-black">
-                <div class="text-xl w-80 mb-2">
+            <div class="font-medium text-black font-dm">
+                <div class="mb-2 text-xl w-80">
                     Introduceti nr. de telefon
                     sau adresa de email
                 </div>
@@ -18,7 +18,7 @@
                     <div class="">
                         Continua
                     </div>
-                    <component class="h-6 hidden" :is="icons.arrowRight"></component>
+                    <component class="hidden h-6" :is="icons.arrowRight"></component>
 
                 </button>
                 <div class="bg-[#D9D9D9] h-[2px] mx-1 mt-4 mb-2 rounded-full"></div>

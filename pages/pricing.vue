@@ -1,8 +1,8 @@
 <template>
-    <div class="text-5xl text-left font-space font-bold py-4 px-2 my-16 ">
+    <div class="px-2 py-4 my-16 text-5xl font-bold text-left font-space ">
         Pachete Reciclon
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-around gap-4  lg:gap-x-12">
+    <div class="grid justify-around grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-12">
         <Card v-for="product in products" :bags="product.bags" :title="product.title" :price="product.price"
             :isHighlighted="product.isHighlighted" />
     </div>

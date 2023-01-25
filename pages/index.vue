@@ -1,9 +1,9 @@
 <template>
-   <div class="font-dm flex flex-col mx-10 md:mx-24 lg:mx-auto max-w-screen-xl h-screen">
-      <div class="text-5xl font-space text-center mx-auto my-4 font-bold">
+   <div class="flex flex-col h-screen max-w-screen-xl mx-10 font-dm md:mx-24 lg:mx-auto">
+      <div class="mx-auto my-4 text-5xl font-bold text-center font-space">
          HomePage
       </div>
-      <div class="flex gap-2 items-center font-space font-medium text-lg">
+      <div class="flex items-center gap-2 text-lg font-medium font-space">
          <Katex :element="test" /> times
          <Icon name="👨🏼‍🚀" class="text-red-400 " />
       </div>

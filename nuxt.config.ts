@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt','@nuxt/content', 'nuxt-icon',
   ],
+
   app: {
     head: {
       link: [{
@@ -19,7 +20,8 @@ export default defineNuxtConfig({
       }],
     }
   },
-   content: {
+
+ content: {
     markdown: {
       remarkPlugins: [
         'remark-math'
@@ -28,6 +30,5 @@ export default defineNuxtConfig({
         'rehype-katex'
       ]
     }
-  }
- 
+  },
 })

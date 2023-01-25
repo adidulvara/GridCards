@@ -1,22 +1,61 @@
+model Year {
+    id       Int       @id @default(autoincrement())
+    name     String
+    problems Problem[]
+}
+
+model Chapter {
+    id       Int       @id @default(autoincrement())
+    name     String
+    problems Problem[]
+}
+
 model Problem {
-    id        Int        @id @default(autoincrement())
-    title     String
-    chapter   String
-    questions Question[]
+    id         Int        @id @default(autoincrement())
+    text       String
+    solveTime  SolveTime  @default(FIVE_MINUTES)
+    difficulty Difficulty @default(EASY)
+    year       Year       @relation(fields: [yearId], references: [id])
+    chapter    Chapter    @relation(fields: [chapterId], references: [id])
+    questions  Question[]
+    yearId     Int
+    chapterId  Int
+}
+
+enum SolveTime {
+    FIVE_MINUTES
+    TEN_MINUTES
+    FIFTEEN_MINUTES
+    THIRTY_MINUTES
+}
+
+enum Difficulty {
+    EASY
+    MEDIUM
+    ADVANCED
+    EXPERT
 }
 
 model Question {
-    id        Int      @id @default(autoincrement())
-    Problem   Problem? @relation(fields: [problemId], references: [id])
-    problemId Int?
-    question  String
-    answers   Answer[]
+    id         Int      @id @default(autoincrement())
+    text       String
+    answers    Answer[]
+    solution   Solution @relation(fields: [solutionId], references: [id])
+    Problem    Problem? @relation(fields: [problemId], references: [id])
+    problemId  Int?
+    solutionId Int
+}
+
+model Solution {
+    id       Int        @id @default(autoincrement())
+    text     String
+    Question Question[]
 }
 
 model Answer {
     id         Int      @id @default(autoincrement())
-    question   Question @relation(fields: [id], references: [id])
-    questionId Int
-    answer     String
+    text       String
+    question   Question @relation(fields: [questionId], references: [id])
     isCorrect  Boolean
+    questionId Int
 }
