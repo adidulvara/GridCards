@@ -4,7 +4,7 @@
          HomePage
       </div>
       <div class="flex items-center gap-2 text-lg font-medium font-space">
-         <Katex :element="test" /> times
+         <Katex :element="integral" /> times
          <Icon name="👨🏼‍🚀" class="text-red-400 " />
       </div>
    </div>
