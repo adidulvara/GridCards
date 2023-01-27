@@ -5,11 +5,12 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},  
+      autoprefixer: {},
     },
   },
   modules: [
-    '@vueuse/nuxt','@nuxt/content', 'nuxt-icon',
+    '@vueuse/nuxt', '@nuxt/content', 'nuxt-icon',
+
   ],
 
   app: {
@@ -21,7 +22,7 @@ export default defineNuxtConfig({
     }
   },
 
- content: {
+  content: {
     markdown: {
       remarkPlugins: [
         'remark-math'
